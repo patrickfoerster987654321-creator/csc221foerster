@@ -42,7 +42,19 @@ def num_digits(n):
             count += 1
         return count
 
-
+def num_even_digits(n):
+    """
+      >>> num_even_digits(123456)
+      3
+      >>> num_even_digits(2468)
+      4
+      >>> num_even_digits(1357)
+      0
+      >>> num_even_digits(2)
+      1
+      >>> num_even_digits(20)
+      2
+    """
 
 
 
