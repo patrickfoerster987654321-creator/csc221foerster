@@ -115,8 +115,12 @@ def sum_of_squares_of_digits(n):
 
     return sum
 
-
-
+def count_letter(f, l):
+    count = 0
+    for char in f:
+        if char == l:
+            count += 1
+    print(count)
 
 if __name__ == '__main__':
     import doctest
