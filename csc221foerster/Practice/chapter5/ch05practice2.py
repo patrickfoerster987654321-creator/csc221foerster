@@ -1,3 +1,5 @@
+import math
+
 def is_prime(n):
     """
     >>> is_prime(2)
@@ -14,12 +16,10 @@ def is_prime(n):
     if n % 2 == 0:
         return False
 
-    for i in range(3, int(math.sqrt(i)) + 1, 2):
+    for i in range(3, int(math.sqrt(n)) + 1, 2):
         if n % i == 0:
                    return False
-    
-
-    return True
+        return True
 
 
 
