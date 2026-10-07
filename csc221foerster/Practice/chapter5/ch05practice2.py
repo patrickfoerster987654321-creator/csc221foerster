@@ -1,5 +1,12 @@
-def is_prime():
-
+def is_prime(n):
+    """
+    >>> is_prime(2)
+    True
+    >>> is_prime(4)
+    False
+    >>> is_prime(37)
+    True
+    """
 
 
 
