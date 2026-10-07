@@ -14,7 +14,15 @@ def compare(a, b):
       0
     """
     #  Your function body should begin here.
+    message = ""
+    if a > b:
+        message = 1
+    elif a < b:
+        message = -1
+    else:
+        message = 0
 
+    return message
 
 
 if __name__ == '__main__':
