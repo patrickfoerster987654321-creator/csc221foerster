@@ -83,14 +83,16 @@ def print_digits(n):
       >>> print(returned)
       None
     """
-    result = ""
-    while n > 0:
-        digit = n % 10
-        result += str(digit)
-        result += " "
-        n = n // 10
-    return result
+    if n == 0:
+        print(0)
+        return
 
+    digits = []
+    while n > 0:
+        digits.append(str(n % 10))
+        n //= 10
+
+    print(" ".join(digits))
 
 if __name__ == '__main__':
     import doctest
