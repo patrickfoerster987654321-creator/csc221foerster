@@ -11,7 +11,10 @@ def is_factor(f, n):
       >>> is_factor(7, 15)
       False
     """
-
+    if n % f == 0:
+        return True
+    else:
+        return False
 
 if __name__ == '__main__':
     import doctest
