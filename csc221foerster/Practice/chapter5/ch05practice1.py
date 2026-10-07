@@ -29,6 +29,10 @@ def is_multiple(m, n):
       >>> is_multiple(12, 7)
       False
     """
+    if m % n == 0:
+        return True
+    else:
+        return False
 
 if __name__ == '__main__':
     import doctest
