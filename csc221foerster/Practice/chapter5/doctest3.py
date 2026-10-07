@@ -21,6 +21,9 @@ def intercept(x1, y1, x2, y2):
       >>> intercept(4, 6, 12, 8)
       5.0
     """
+    m = slope(x1, y1, x2, y2)
+    b = y1 - m * x1
+    return b
     
 
 if __name__ == '__main__':
