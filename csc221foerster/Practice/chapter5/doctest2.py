@@ -9,7 +9,7 @@ def hypotenuse(a, b):
       >>> hypotenuse(9, 12)
       15.0
     """
-
+    return a**2+b**2
 
 if __name__ == '__main__':
     import doctest
