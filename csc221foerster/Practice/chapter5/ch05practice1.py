@@ -71,7 +71,7 @@ def c2f(t):
       >>> c2f(-48)
       -54
     """
-    temp = round((t+32)*9/5)
+    temp = round((t*9/5)+32)
     return temp
 
 if __name__ == '__main__':
