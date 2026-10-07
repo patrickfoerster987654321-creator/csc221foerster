@@ -116,9 +116,19 @@ def sum_of_squares_of_digits(n):
     return sum
 
 def count_letter(f, l):
+    """
+    >>> count_letter("banana", "a")
+    3
+    >>> count_letter("apple", "o")
+    0
+    >>> count_letter("strawberry", "r")
+    3
+    """
+    fruit = "banana"
+    letter = "a"
     count = 0
-    for char in f:
-        if char == l:
+    for char in fruit:
+        if char == letter:
             count += 1
     print(count)
 
