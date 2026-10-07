@@ -9,7 +9,8 @@ def slope(x1, y1, x2, y2):
       >>> slope(2, 4, 1, 2)
       2.0
     """
-
+    m = ((y2-y1)/(x2-x1))
+    return m
 
 if __name__ == '__main__':
     import doctest
