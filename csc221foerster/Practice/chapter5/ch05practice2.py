@@ -55,7 +55,18 @@ def num_even_digits(n):
       >>> num_even_digits(20)
       2
     """
-
+    if n < 0:
+        return num_even_digits(abs(n))
+    elif n == 0:
+        return 1
+    else:
+        count = 0
+        while n > 0:
+            digit = n % 10
+            if digit % 2 == 0:
+                count += 1
+            n = n // 10
+        return count
 
 
 if __name__ == '__main__':
