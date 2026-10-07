@@ -31,6 +31,18 @@ def num_digits(n):
       >>> num_digits(-12345)
       5
     """
+    if n < 0:
+        num_digits(math.abs(n))
+    elif n == 0:
+        return 1
+    else:
+        count = 0
+        while n > 0:
+            n //= 10
+            count += 1
+        return count
+
+
 
 
 
