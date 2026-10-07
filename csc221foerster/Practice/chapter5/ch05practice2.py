@@ -108,6 +108,15 @@ def sum_of_squares_of_digits(n):
       >>> sum_of_squares_of_digits(987)
       194
     """
+    num = str(abs(n))
+    sum = 0
+    for digit in num:
+        sum += int(digit)**2
+
+    return sum
+
+
+
 
 if __name__ == '__main__':
     import doctest
