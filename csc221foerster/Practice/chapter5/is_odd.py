@@ -7,6 +7,11 @@ def is_odd(n):
     >>> is_odd(2390843878545794738)
     False
     """
+    if n % 2 == 1:
+        return True
+    else:
+        return False
+
 
 
 
