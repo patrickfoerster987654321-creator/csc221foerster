@@ -9,7 +9,9 @@ def hypotenuse(a, b):
       >>> hypotenuse(9, 12)
       15.0
     """
-    return a**2+b**2
+    import math
+    hyp = float(math.sqrt((a**2)+(b**2)), 1)
+    return hyp
 
 if __name__ == '__main__':
     import doctest
