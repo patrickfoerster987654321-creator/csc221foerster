@@ -52,7 +52,7 @@ def f2c(t):
       >>> f2c(39)
       4
     """
-    temp = ((5/9)*t-32)
+    temp = ((5/9)*(t-32))
     return temp
 
 if __name__ == '__main__':
