@@ -32,7 +32,7 @@ def num_digits(n):
       5
     """
     if n < 0:
-        num_digits(math.abs(n))
+        return num_digits(abs(n))
     elif n == 0:
         return 1
     else:
