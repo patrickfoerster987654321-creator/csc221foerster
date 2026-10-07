@@ -1,3 +1,5 @@
+import math
+
 def hypotenuse(a, b):
     """
       >>> hypotenuse(3, 4)
@@ -9,8 +11,7 @@ def hypotenuse(a, b):
       >>> hypotenuse(9, 12)
       15.0
     """
-    import math
-    hyp = float(math.sqrt((a**2)+(b**2)), 1)
+    hyp = float(math.sqrt((a**2)+(b**2)))
     return hyp
 
 if __name__ == '__main__':
