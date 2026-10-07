@@ -124,11 +124,9 @@ def count_letter(f, l):
     >>> count_letter("strawberry", "r")
     3
     """
-    fruit = "banana"
-    letter = "a"
     count = 0
-    for char in fruit:
-        if char == letter:
+    for char in f:
+        if char == l:
             count += 1
     print(count)
 
