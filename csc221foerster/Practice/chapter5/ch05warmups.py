@@ -8,7 +8,9 @@
   >>> junk
   [3, 7, 27]
 """
-
+junk = [3,7,9,10,13,17,21,24,27]
+a = 2
+b = 7
 
 if __name__ == '__main__':
     import doctest
