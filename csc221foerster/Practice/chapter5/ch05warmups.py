@@ -22,6 +22,11 @@ b = 7
 """
 nlist = [[0,1,17],[0,5,2],[2,0,3]]
 
+"""
+  >>> mystring.split('??')
+  ['this', 'and', 'that']
+"""
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
