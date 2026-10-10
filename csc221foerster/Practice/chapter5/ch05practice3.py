@@ -14,7 +14,15 @@ def lots_of_letters(word):
         result += letter * (index + 1)
     return result
         
-
+def seperate_by_type(list_of_stuff):
+    """
+      >>> seperate_by_type([3, 'a', 4.2, None, (1, 2), 'b'])
+      ([3, 4.2], ['a', (1, 2), 'b'], [None])
+      >>> seperate_by_type([1, 3, 'xyz', 42, (0, 2), 'qwerty', [1, 0], 12])
+      ([1, 3, 42, 12], ['xyz', (0, 2), 'qwerty', [1, 0]], [])
+      >>> seperate_by_type([])
+      ([], [], [])
+    """
 
 if __name__ == '__main__':
     import doctest
