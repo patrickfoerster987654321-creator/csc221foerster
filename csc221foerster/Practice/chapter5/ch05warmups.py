@@ -20,7 +20,7 @@ b = 7
   >>> nlist[1][1]
   5
 """
-
+nlist = [[0,1,17],[0,5,2],[2,0,3]]
 
 if __name__ == '__main__':
     import doctest
