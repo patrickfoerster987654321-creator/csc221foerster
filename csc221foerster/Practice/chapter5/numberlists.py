@@ -39,6 +39,13 @@ def only_odds(numbers):
       >>> nums
       [1, 2, 3, 4]
     """
+    odds = []
+    for item in numbers:
+        if item % 2 == 1:
+            odds.append(item)
+
+
+    return odds
 
 if __name__ == '__main__':
     import doctest
