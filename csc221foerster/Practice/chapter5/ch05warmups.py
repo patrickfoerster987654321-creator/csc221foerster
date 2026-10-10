@@ -27,6 +27,9 @@ nlist = [[0,1,17],[0,5,2],[2,0,3]]
   ['this', 'and', 'that']
 """
 
+mystring = 'this??and??that'
+
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
