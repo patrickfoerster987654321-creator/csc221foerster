@@ -55,6 +55,13 @@ def only_evens(numbers):
     >>> nums
     [1, 2, 3, 4]
   """
+  evens = []
+  for item in list:
+      if item % 2 == 0:
+          evens.append(item)
+
+  return evens
+
 
 if __name__ == '__main__':
     import doctest
