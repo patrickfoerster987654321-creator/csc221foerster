@@ -31,12 +31,13 @@ def seperate_by_type(list_of_stuff):
     for item in list_of_stuff:
         if item is None:
             nones.append(item)
-        elif item is type(int) or item is type(float):
-            numbers.append([])
-        elif item is type(str) or item is type(tuple) or item is type(list):
+        elif isinstance(item, (int, float)):
+            numbers.append(item)
+        elif isinstance(item, (str, tuple, list)):
             sequences.append(item)
         else:
             bools.append(item)
+    return (numbers, sequences, nones)
 
 if __name__ == '__main__':
     import doctest
