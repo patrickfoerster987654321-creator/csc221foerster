@@ -47,6 +47,24 @@ def only_odds(numbers):
 
     return odds
 
+def multiples_of(num, num_list):
+    """
+    >>> multiples_of(2, [2, 4, 7, 8])
+    [2, 4, 8]
+    >>> multiples_of(3, [3, 39, 8, 13])
+    [3, 39]
+    >>> sixMult = multiples_of(6, [6, 13, 9, 12, 18])
+    >>> print(sixMult)
+    [6, 12, 18]
+    """
+    mults = []
+    for n in num_list:
+        if n % num == 0:
+            mults.append(n)
+
+    return mults
+
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
