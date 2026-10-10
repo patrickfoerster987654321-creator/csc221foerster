@@ -42,6 +42,8 @@ def num_digits(n):
             count += 1
         return count
 
+
+
 def num_even_digits(n):
     """
       >>> num_even_digits(123456)
@@ -57,9 +59,9 @@ def num_even_digits(n):
     """
     if n < 0:
         return num_even_digits(abs(n))
-    elif n == 0:
+    if n == 0:
         return 1
-    else:
+    if n > 0:
         count = 0
         while n > 0:
             digit = n % 10
