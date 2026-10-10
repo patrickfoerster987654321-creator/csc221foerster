@@ -8,7 +8,14 @@ def replace(s, old, new):
       >>> replace(s, 'o', 'a')
       'I lave spam!  Spam is my favarite faad.  Spam, spam, spam, yum!'
     """
+    stri = ""
+    for letter in s:
+        if letter == old:
+            stri += new
+        else:
+            stri += letter
 
+    return stri.join(stri.split(stri))
 
 if __name__ == '__main__':
     import doctest
