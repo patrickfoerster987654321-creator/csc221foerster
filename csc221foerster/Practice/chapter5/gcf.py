@@ -9,7 +9,9 @@ def gcf(m, n):
       >>> gcf(24, 12)
       12
     """
-
+    while n:
+        m,n = n, m % n
+    return m
 
 if __name__ == '__main__':
     import doctest
