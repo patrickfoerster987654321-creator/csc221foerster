@@ -2,8 +2,12 @@ def will_ring(timenow, hourslater):
     """
     >>> will_ring('2 p.m.', 51)
     5 p.m.
-    >>> will_ring('2 p.m', 37)
+    >>> will_ring('2 p.m.', 37)
     3 a.m.
+    >>> will_ring('3 a.m.', 28)
+    7 a.m.
+    >>> will_ring('6 a.m.', 50)
+    8 a.m.
     """
     timenow = timenow.replace('.', '').strip()
     hour_str, period = timenow.split()
