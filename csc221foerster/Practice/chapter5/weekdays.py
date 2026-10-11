@@ -1,10 +1,10 @@
 def week_days(numday):
     """
-    >>> numday(6)
+    >>> week_days(6)
     Saturday
-    >>> numday(3)
+    >>> week_days(3)
     Wednesday
-    >>> numday(1)
+    >>> week_days(1)
     Monday
     """
     days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
