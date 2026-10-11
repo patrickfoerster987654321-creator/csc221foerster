@@ -7,7 +7,8 @@ def week_days(numday):
     >>> numday(1)
     Monday
     """
-    
+    days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    return days[numday]
 
 
 
