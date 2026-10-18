@@ -12,7 +12,10 @@ def add_fruit(inventory, fruit, quantity=0):
        >>> new_inventory['strawberries']
        35
      """
-
+     if fruit in inventory:
+         inventory[fruit] += quantity
+     else:
+         inventory[fruit] = quantity
 
 if __name__ == '__main__':
     import doctest()
