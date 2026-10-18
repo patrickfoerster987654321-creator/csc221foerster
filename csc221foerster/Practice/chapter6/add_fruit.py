@@ -18,5 +18,5 @@ def add_fruit(inventory, fruit, quantity=0):
         inventory[fruit] = quantity
 
 if __name__ == '__main__':
-    import doctest()
+    import doctest
     doctest.testmod()
