@@ -1,0 +1,3 @@
+Output is 0 1 1 0
+a is 0 and b is 1 in the tuple assignment
+All xor with binary, because a is a, so the same bool val, it returns a 0. Because a and b are not the same bool, it returns a 1. Same thing for 3. Because b is b, so the same bool val, it returns 0 
