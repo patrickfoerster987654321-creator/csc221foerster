@@ -1,0 +1,6 @@
+The output is false
+
+x is 1 and y is zero
+z first finds the parentheses, so x == y and x == y, and because 1 != 0, this evaluates to false (you can do the second one but when there is a false and stops and returns that immediately)
+Then z evaluates the not x == y, which is true, and finally, it looks at or, which returns the true value, so true is returned
+Then outputs the opposite of z, so false 
