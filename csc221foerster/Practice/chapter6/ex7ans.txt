@@ -1,0 +1,9 @@
+The output is 0 9 -9 13 2 32 
+
+x is 8, or 1000, and y is 1, or 0001
+a is set to bitwise and, so it looks for a false zero on each digit, which returns 0000 or 0
+b is set to bitwise or, so it looks for a true one on each digit, which returns 1001 or 9
+c is set to tilde x, which does -(x+1), or -9
+d is set to xor x and 5 (0101), which looks for similarity and returns 0 if similar digits, so it will return 1101, or 13
+e is set to right alignment of x by 2, which is also 8 //2^2, or 2 
+f is set to left alignment of x by 2, which is also 8 * 2^2, or 32
