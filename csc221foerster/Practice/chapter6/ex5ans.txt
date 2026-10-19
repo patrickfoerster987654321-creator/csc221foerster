@@ -1,0 +1,5 @@
+The output is 17 68 8
+
+Var 1 is set to 17, or 10001
+Var right shifts it right one spot, so 17 // 2, or 8
+Var left shifts it left 2 spots, so 17 * 2^2, or 68
