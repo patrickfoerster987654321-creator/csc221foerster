@@ -1,0 +1,6 @@
+0b1001 = 9, binary 1 at 8 and 1 at 1 8+1=9
+0b1100 = 12, binary 1 at 8 and 1 at 4 8+4=12
+0o10 = 8, octal 1 at 8 8
+0xA = 10, hex A = 10 10
+0x12 = 18, hex 1 at 16 and 2 at 1 16+2=18
+
