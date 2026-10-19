@@ -4,7 +4,8 @@
   >>> type(thing2)
   <class 'set'>
 """
-
+thing1 = {}
+thing2 = set()
 
 if __name__ == '__main__':
     import doctest
