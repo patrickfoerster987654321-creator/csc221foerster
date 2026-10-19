@@ -7,7 +7,7 @@
   >>> 'name' in d
   True
 """
-d = {'num':4}
+d = {4: 'thing'}
 
 if __name__ == '__main__':
     import doctest
