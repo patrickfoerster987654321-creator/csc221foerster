@@ -15,6 +15,29 @@ class Foo:
     def message(self):
         return f'I am {self.age} and I love {self.food}!'
 
+class Bar:
+    """
+      >>> bar = Bar()
+      >>> bar.this
+      'Ni!'
+      >>> bar.that
+      'shrubbery'
+      >>> bar.speak(2)
+      'Ni! Ni!'
+      >>> bar.speak(5)
+      'Ni! Ni! Ni! Ni! Ni!'
+    """
+    def __init__(self, this='Ni!', that='shrubbery'):
+        self.this = this
+        self.that = that
+
+    def speak(self, num):
+        count = 1
+        s = ''
+        while count <= num:
+            s += self.this + ' '
+            count += 1
+        return s.strip()
 
 
 
