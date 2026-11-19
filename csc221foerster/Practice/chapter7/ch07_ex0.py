@@ -39,7 +39,18 @@ class Bar:
             count += 1
         return s.strip()
 
-
+class Seqtools:
+    """
+      >>> myseq = Seqtools([1, 2, 'a', 7, ('x', 'y'), 'yup', 11.3, True])
+      >>> myseq.data
+      [1, 2, 'a', 7, ('x', 'y'), 'yup', 11.3, True]
+      >>> myseq.nums()
+      [1, 2, 7, 11.3]
+      >>> myseq.seqs()
+      ['a', ('x', 'y'), 'yup']
+      >>> myseq.others()
+      [True]
+    """
 
 
 if __name__ == '__main__':
