@@ -54,7 +54,7 @@ class Seqtools:
     def __init__ (self, data):
         self.data = data
 
-    def nums(self, data):
+    def nums(self):
         n = []
         for thing in self.data:
             if type(thing) == int or type(thing) == float:
@@ -63,22 +63,18 @@ class Seqtools:
 
         return n
 
-    def seqs(self, data):
+    def seqs(self):
          s = []
          for thing in self.data:
              if type(thing) == str or type(thing) == tuple or type(thing) == list:
                  s.append(thing)
-
-
          return s
      
-     def others(self, data):
+    def others(self):
         o = []
         for thing in self.data:
             if type(thing) == bool:
                 o.append(thing)
-
-
         return o
 
 
