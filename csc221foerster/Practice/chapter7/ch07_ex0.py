@@ -51,6 +51,36 @@ class Seqtools:
       >>> myseq.others()
       [True]
     """
+    def __init__ (self, data):
+        self.data = data
+
+    def nums(self, data):
+        n = []
+        for thing in self.data:
+            if type(thing) == int or type(thing) == float:
+                n.append(thing)
+
+
+        return n
+
+    def seqs(self, data):
+         s = []
+         for thing in self.data:
+             if type(thing) == str or type(thing) == tuple or type(thing) == list:
+                 s.append(thing)
+
+
+         return s
+     
+     def others(self, data):
+        o = []
+        for thing in self.data:
+            if type(thing) == bool:
+                o.append(thing)
+
+
+        return o
+
 
 
 if __name__ == '__main__':
