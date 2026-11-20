@@ -14,6 +14,11 @@ class Time:
         s = total_seconds - (m * 60)
         return f'{h}:{m:02d}:{s:02d}'
 
+    def convert_to_seconds(self):
+        minutes = self.hours * 60 + self.minutes
+        seconds = minutes * 60 + self.seconds
+        return seconds
+
     def after(self, other):
         if self.hours > other.hours:
             return True
