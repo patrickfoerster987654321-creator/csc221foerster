@@ -3,8 +3,8 @@ class Time:
         self.hours = hours
         self.minutes = minutes
         self.seconds = seconds
-    def print_time(self):
-        print(f'{self.hours}:{self.minutes:02d}:{self.seconds:02d}')
+    def __str__(self):
+        return f'{self.hours}:{self.minutes:02d}:{self.seconds:02d}'
     def increment(self, seconds):
         self.seconds = seconds + self.seconds
 
