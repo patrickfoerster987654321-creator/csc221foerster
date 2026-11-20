@@ -90,6 +90,65 @@ def distance(p1, p2):
     dy = p2.y - p1.y
     dx = p2.x - p1.x
     return ((dx ** 2) + (dy ** 2)) ** 0.5
+class NumberSet:
+    """
+      >>> nums = NumberSet([2, 4, 6])
+      >>> print(nums)
+      [2, 4, 6]
+      >>> nums.mean()
+      4.0
+      >>> nums.median()
+      4
+      >>> nums.mode()
+      [2, 4, 6]
+      >>> nums2 = NumberSet([1, 2, 6, 6])
+      >>> nums2.mean()
+      3.75
+      >>> nums2.median()
+      4.0
+      >>> nums2.mode()
+      [6]
+      >>> numset = [3, 5, 19, 42, 5, 42, 11]
+      >>> nums3 = NumberSet(numset)
+      >>> nums3.numlist
+      [3, 5, 5, 11, 19, 42, 42]
+      >>> numset
+      [3, 5, 19, 42, 5, 42, 11]
+      >>> round(nums3.mean())
+      18
+      >>> nums3.median()
+      11
+      >>> nums3.mode()
+      [5, 42]
+    """
+    def __init__(self, data):
+        self.numlist = sorted(data)
+
+    def __str__(self):
+        return f"{self.numlist}"
+
+    def mean(self):
+        count = 0
+        s = 0
+        for num in self.numlist:
+            s += num
+            count += 1
+        return s / count
+
+    def median(self):
+        mid = len(self.numlist) // 2
+        if len(self.numlist) % 2 != 0:
+            return self.numlist[mid]
+        else:
+            return (self.numlist[mid - 1] + self.numlist[mid]) / 2
+
+    def mode(self):
+        counts = {}
+        for num in self.numlist:
+            counts[num] = counts.get(num, 0) + 1
+
+        max_count = max(counts.values())
+        return [num for num, count in counts.items() if count == max_count]
 
 
 if __name__ == '__main__':
