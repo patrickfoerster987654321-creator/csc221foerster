@@ -1,3 +1,4 @@
+from point import Point
 class Foo:
     """
       >>> foo = Foo(42, 'eggs')
@@ -76,7 +77,17 @@ class Seqtools:
             if type(thing) == bool:
                 o.append(thing)
         return o
-
+def distance(p1, p2):
+    """
+      >>> p1 = Point(1, 2)
+      >>> p2 = Point(4, 6)
+      >>> distance(p1, p2)
+      5.0
+      >>> p3 = Point(16, 11)
+      >>> distance(p2, p3)
+      13.0
+    """
+    return ((p1 ** 2)+(p2 ** 2)) ** 0.5
 
 
 if __name__ == '__main__':
