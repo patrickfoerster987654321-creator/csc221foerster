@@ -87,7 +87,9 @@ def distance(p1, p2):
       >>> distance(p2, p3)
       13.0
     """
-    return ((p1 ** 2)+(p2 ** 2)) ** 0.5
+    dy = p2.y - p1.y
+    dx = p2.x - p1.x
+    return ((dx ** 2) + (dy ** 2)) ** 0.5
 
 
 if __name__ == '__main__':
